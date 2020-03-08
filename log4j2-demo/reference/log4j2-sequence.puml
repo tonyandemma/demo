@@ -1,0 +1,8 @@
+@startuml
+hide footbox
+title log4j2启动过程
+LogManager -> PropertiesUtil: PropertiesUtil.getProperties()
+'LogManager -> LoggerContext: getContext()
+'LoggerContext -> Logger: getLogger()
+
+@enduml
